@@ -1,0 +1,304 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+head {
+  display: none;
+}
+
+body {
+  margin: 0;
+  display: block;
+  margin: 8px;
+}
+
+section {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+
+/* Style the navigation menu */
+.navbar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    background-color: #FFE6E6;
+    overflow: auto;
+  }
+  
+  nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: #E1AFD1;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+  
+  /* Add a background color on mouse-over */
+  .navbar a:hover {
+    background-color: #7469B6; 
+  }
+  
+  
+  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+  @media (min-width: 300px) and (max-width: 900px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+  
+
+  div {
+    display: block;
+    unicode-bidi: isolate;
+}
+}
+
+.profile img {
+  height:500px;
+  width: 250px;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  padding-right: 3rem;
+  float:inline-end
+  }
+
+  
+.profile {
+  background-color: #FFE6E6;
+}
+
+p {
+  font-size: 4rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+
+.lead {
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-size: 20px;
+}
+
+.whatido {
+  display:grid;
+  margin:0;
+  padding-top: 6rem;
+  padding-bottom: 3rem; 
+  
+}
+
+.whatido > p {
+    font-size: 4rem;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-weight: bold;
+   text-align:center;
+   margin-left: 55%;
+   margin-top: 2%;
+   padding-right: 3rem;
+   padding-bottom:2rem;
+   float:inline-end;
+}
+
+
+hr {
+  border: dotted #7469B6 6px;
+  border-bottom: none;
+  width: 85%;
+  margin: 50px;
+}
+
+h3 {
+  color: #E1AFD1;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin-left: 5%;
+}
+
+li {
+  margin-left: 5%;
+}
+
+.experience > .experience-ul > li {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.experience > .experience-ul > .dotted {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h4 { 
+  text-decoration: underline;
+  color: #e1afd1;
+  margin-left: 7%;
+}
+.dotted {
+  list-style-type: none;
+  margin-left: 9%;
+  margin-bottom: 2%;
+}
+
+#showcase {
+  background: linear-gradient(300deg, #f4e47e, #bf6dfa, #e48578);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  padding-bottom:5rem;
+}
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.showcase>h2{
+  color:white;
+  display:flex;
+  justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 5rem;
+  padding:5rem 0 2rem 0;
+}
+
+.work{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.work img{
+  width:300px;
+  height:180px;
+  border:6px dotted white;
+  padding:0.5rem;
+ 
+}
+
+.work-item{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.work h3{
+  color:white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding:1rem;
+  text-decoration: underline;
+}
+
+.work p{
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  font-weight: bold;
+  font-size:1rem;
+  width:350px;
+  letter-spacing: 2px;
+  padding-left: 1.2rem;
+}
+
+@media(max-width:1200px){
+ div.work{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .work-item img{
+  width:400px;
+  height:300px;
+ }
+
+ .work-item h3{
+  font-size: 2rem;
+  margin-bottom: 0;
+ }
+
+ .work-item p{
+  margin: 0 0 2rem 0;
+  font-size: 1.3rem;
+ }
+}
+
+.contact-top { 
+  margin-top:0.1rem;
+  background-image: url(./Header3.jpeg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:0px 0px;  
+  display:flex;
+  flex-direction: column;
+}
+
+  #contact h2 {
+      padding:0.5rem 0 3rem 3rem;
+      color:white;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 5rem;
+  }
+
+  .contact-top p{
+      padding:0.5rem 0 3rem 3rem;
+      color:white;
+      font-size: 1.2rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      letter-spacing: 0.2rem;
+  }
+
+  .contact-buttom {
+      background-color: rgb(255, 214, 221);
+  }
+
+  .contact-buttom > h3{
+      justify-items: start; 
+      text-align: center;
+      padding: 2rem 3rem 2rem 2rem;
+      color:white;
+      font-size: 2rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+  p#p{
+      text-align: center;
+      color:white;
+      padding:2rem 0 3rem 3rem;
+      font-size: 1.5rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: bold;
+    }
+
+  footer{
+      padding:0.5rem 0 0.5rem 0;
+      display:flex;
+      justify-content: center;
+      background-color: #7469BC;
+      color:#E1AFD1;
+      font-size: 1rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: bold;
+  }
